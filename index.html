@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Underneath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダー / デバッグ領域 -->
+    <header>
+        <h1>Underneath</h1>
+    </header>
+
+<!-- 1. ホーム画面 -->
+<section id="view-home" class="view">
+    <h2>パズルセット一覧</h2>
+    <div id="set-list" class="set-grid"></div>
+
+    <!-- ホーム画面下部に配置（警戒色ボタン） -->
+    <div class="home-footer" style="margin-top: 40px; text-align: center;">
+        <button onclick="resetProgress()" class="button-danger">全進捗をリセット</button>
+    </div>
+</section>
+
+    <!-- 2. セットホーム画面 -->
+    <section id="view-set" class="view hidden">
+	<button onclick="backToHomeView()">← 全体ホームに戻る</button>
+        <div id="set-header">
+            <img id="set-icon" src="" alt="icon">
+            <h2 id="set-title"></h2>
+            <p id="set-description"></p>
+            <div class="set-actions">
+                <a id="link-pdf-download" href="#" download class="button">PDFをダウンロード</a>
+            </div>
+        </div>
+        <hr>
+        <h3>問題一覧</h3>
+        <div id="puzzle-list" class="button-grid"></div>
+    </section>
+
+    <!-- 3. 問題プレイ画面 -->
+<section id="view-puzzle" class="view hidden">
+    <div class="puzzle-nav">
+        <button onclick="backToSetView()">← セット画面に戻る</button>
+        <span id="puzzle-title"></span>
+        <div class="puzzle-nav-controls">
+            <!-- 追加: 外部のPenpa-editorで開くボタン -->
+            <a id="btn-external-penpa" href="#" target="_blank" rel="noopener noreferrer" class="button button-external">Penpa-editorで解く ↗</a>
+            <button id="btn-prev-puzzle" onclick="navigatePuzzle(-1)">前の問題</button>
+            <button id="btn-next-puzzle" onclick="navigatePuzzle(1)">次の問題</button>
+        </div>
+    </div>
+    <!-- Penpa-editor埋め込み用 iframe -->
+    <div class="iframe-container">
+        <iframe id="penpa-frame" src="about:blank"></iframe>
+    </div>
+</section>
+
+    <script src="app.js"></script>
+</body>
+</html>

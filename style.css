@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+/* --- 全体変数定義 --- */
+:root {
+    --bg-color: #080d1a;            /* 深みのあるダークブルー背景 */
+    --card-bg: rgba(15, 25, 45, 0.7);  /* すりガラス風カード背景 */
+    --primary: #00e5ff;             /* 基調となるネオン水色 */
+    --primary-glow: rgba(0, 229, 255, 0.4);
+    --primary-dark: #0088aa;
+    --cleared: #00ffaa;             /* クリア時のネオンエメラルド */
+    --cleared-glow: rgba(0, 255, 170, 0.3);
+    --text-main: #f0f8ff;           /* メイン文字色（ほぼ白） */
+    --text-muted: #8ab4f8;          /* 薄い水色テキスト */
+    --disabled-bg: rgba(255, 255, 255, 0.05);
+    --disabled-text: #4a607a;
+    --border-color: rgba(0, 229, 255, 0.25);
+    --font-heading: 'Orbitron', 'Noto Sans JP', sans-serif;
+    --font-body: 'Noto Sans JP', sans-serif;
+}
+
+/* --- 基本スタイル --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.12) 0%, transparent 60%),
+        linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden { display: none !important; }
+
+/* --- コンテナ・レイアウト --- */
+header, .view {
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 0 12px var(--primary-glow);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+/* --- 各種ボタン共通 --- */
+button, .button {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.1);
+}
+
+button:hover:not(:disabled), .button:hover {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 0 20px var(--primary-glow);
+    transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+button:disabled {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: var(--disabled-bg);
+    color: var(--disabled-text);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* --- カード・グリッド (ホーム画面) --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.set-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.set-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary-glow);
+    transform: translateY(-4px);
+}
+
+.set-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px var(--primary-glow));
+}
+
+.set-card.cleared {
+    border-color: var(--cleared);
+    background: rgba(0, 255, 170, 0.05);
+}
+
+.set-card.cleared:hover {
+    box-shadow: 0 0 20px var(--cleared-glow);
+}
+
+.set-card.cleared h3 {
+    color: var(--cleared);
+}
+
+.set-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* --- セット画面 --- */
+#set-header {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 20px 0;
+    backdrop-filter: blur(8px);
+}
+
+#set-header img {
+    height: 150px;
+    margin-bottom: 12px;
+    object-fit: contain;
+}
+
+#set-description {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 12px 0 24px 0;
+}
+
+.set-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* --- 問題選択ボタン (押しやすい大きめサイズ) --- */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.puzzle-btn {
+    width: 100%;
+    height: 72px; /* タッチしやすい72pxスクエア */
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: rgba(15, 25, 45, 0.8);
+    color: var(--text-main);
+}
+
+.puzzle-btn.cleared {
+    border-color: var(--cleared);
+    background: rgba(0, 255, 170, 0.15);
+    color: var(--cleared);
+    box-shadow: inset 0 0 10px rgba(0, 255, 170, 0.2);
+}
+
+.puzzle-btn.cleared:hover {
+    background: var(--cleared);
+    color: #000;
+    box-shadow: 0 0 18px var(--cleared-glow);
+}
+
+/* --- 問題プレイ画面 & iframe --- */
+.puzzle-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    background: var(--card-bg);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+#puzzle-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.iframe-container {
+    width: 100%;
+    height: 78vh;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+    background: #fff; /* Penpa描画用ベース */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 問題ページのナビゲーションレイアウト調整 */
+.puzzle-nav-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 外部リンクボタン専用の控えめなスタイル */
+.button-external {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    background: rgba(0, 229, 255, 0.05);
+    border-color: rgba(0, 229, 255, 0.4);
+    color: var(--text-muted);
+}
+
+.button-external:hover {
+    background: rgba(0, 229, 255, 0.2);
+    color: var(--primary);
+    box-shadow: 0 0 12px var(--primary-glow);
+}
+
+/* 警戒色（リセット用）ボタン */
+.button-danger {
+    background-color: #8b0000;
+    color: #ffcccc;
+    border: 1px solid #ff4d4d;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.button-danger:hover {
+    background-color: #b30000;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
