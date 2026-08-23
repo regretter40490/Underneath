@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/suits'_citadel-01.png",
   "descriptionShort": "",
   "descriptionFull": "点線に沿って線を引く。",
+  "descriptionFullCleared": "点線に沿って線を引く。\nすべての領域はちょうど1つのマークを含む。\n同じマークを含む領域は(回転反転を許して)合同または相似になる。\n異なるマークを含む領域は合同でも相似でもない。\nマークの個数は相似比を表す。",
   "pdfUrl": "data/assets/pdf/05_トランプ兵士の城塞.pdf",
   "puzzles": [
     {
@@ -159,12 +160,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=vZTNctowEMfvfoqOrlGn/ooDnunBIZAmTQhJYWjweBhDDDixUSpsQsUk79FjT32vPklWa2ewDcm0h3ZsLavfyiutpD+Lb6nPA3pALWrUqEo1eAzVpLplQatjU/OnGyZRYL+jTprMGAeH0otWi078aBHQ0+vZWYM5D0fO12UtGQy0YzU9Ufu3rdu9q/jzSWhwrdWudc4756E+dT41Di+t5p7VSRe9JFhextrhbW/QnXT607r+vdkemGJwoe6fDiYflk7vo+Lma/AUl+iEYtOI9ySaTy441PCUtbiy12Jou94jFb2NW9u4X+w12La9JoZKbJf8/vGTQL3EJB4lhpWjErXygb/gLVA9py8I0mqY/BptC62OtgtzU2GgPUKrot1He4Zjmmj7aBtoTbQWjjmQq1cU96COx5M97/drYM0NAKSZ0OQvnCMA8HSD6siwq8sY/GAICIRMM+tYCLI3+wJHarDhsLVkwaLhIuUTfxwMg5U/ToidHXsxUmLzNB4FvIQixu6jcL4rw0uoBMPpnPFgZ0jC4Gb6WioZ2pFqxPiNXFPC05w/+FFULgX1UELjkI+jMkp4WOr7nLOHEon9ZFYCIz8B9Sxm4X05UzCv7GXil3fNv/Mrs8Wb3XhUyIpgc+VJw3GtRd0WDhXHcEELSqHiEnRwbou2lIFL4OLCPY7TKAnHLGIwZc7gRqKidHCbG7ePcek1Mqip4LfBN7PPrsHNdmp4lpGO7YouJXLuQ/xauiRmS1g8psD+mMUjKM8lhQ0COUOl6Q27S/OhmlSYk1XQ/MMKIMlLBdLNKpBetYK8xH9bQd17zA5L/at/qv/wx7LK9c34GxLfBKt4h9CBvqH1QnQXf0XWhWiVb4lYLnZbx0B3SBloVc2AtgUNcEvTwF6RtcxaVbZcVVXccqotfcupihJ3PeUZ&a=Nc7RDQMgCATQXfzmo6iAncW4/xre1WtCwgucxL2PsZr3aT7CvBm84O8zZzNlzOLzzFmUjPxUng6Z2XAZ2cTuZ+xLdxJ3UnfY/xnuS2/Zq8voa8Dv46xzAQ==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=vZTdbuI6EMfv8xRHvq2rzRcBIu1FSqGn3ZbSLogtUYQCDZA2wT0mod2g9j32drXSvtc+SceTsPmAVudc7JHjYfybMPbY/mf1T+xyj9apQbUGlakCTZN1qhoG9CZ2OWt9Pwo88y9qxdGCcXAovex06MwNVh49u1mct5j1eGx9WTei0Ug5keNTeXjXuTu4Dj+d+hpXOt1G76J34atz6+/W0ZXRPjB68WoQeeurUDm6G4z6s95w3lS/trsjPRldyrWz0ezD2hp8lOxsDY5kE5VQ7ApxXpL2iw0O1Rxpk1ybm2Rs2s4zTQa528jdz+YGbNfcEE0mpk1+ffsBD4GSiU4cMEZGC6iZop85qqk7yGik6Hv65IG6ngW2COZXcBU3aDtoVbR9WCRNNLTHaGW0NbTn+E4b7RBtC62O1sB36qJMSbJVA89RtPpvr4m2RvXsF865QA5VIDAETwxUeqhBGAG27XOoQ0YFjgE2nKxYMF7FfOZOvbH35E4jYqaXoRgpsWUcTjxeQgFjD4G/3JdhGypBf75k3NsbEtC7nb+VSoT2pJowfivWFPE4449uEJRLQZWU0NTn06CMIu6Xxi7n7LFEQjdalMDEjUBTq4X/UM7kLSt7GbnlXXPv3cpsYb4bzxJ5IthtjaoUjmuTNM3EoskJ3MaCfmhyBeq4MJOuEIdN4JbCpQ3jIPKnLGAwZcbg+qHOVHDbuTvEuPBaKVRk8Lvg6+nfbsBNd2p8npKeaSd9SsTcR/hv4ZKQrWHxmALHUxZOoDybFDYIRA6VxrfsPs5eVYScrLSC9r+sAJJsKxBuWoHwqhVkJf7ZCprOc3pY8n/6fv0PX5GnTN+MvyPxPFjFe4QO9B2tF6L7+BuyLkSrfEfEYrG7Oga6R8pAq2oGtCtogDuaBvaGrEXWqrLFqqriFlPt6FtMVZS47Uiv&a=TY9BCkQhDEPv4rqLqbZWzyLe/xo2YwYHCnn/kR9wrS24otVFWxctUrSZqOX3l9NZXIZzduBskDNtkjP987iT4VzJfztI5z7SuYns3MRG8F+44CZ4kOF+najJ7fEgozvRuY/G7QM=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

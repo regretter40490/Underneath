@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/growth_spiral-01.png",
   "descriptionShort": "",
   "descriptionFull": "点線に沿って線を引く。",
+  "descriptionFullCleared": "点線に沿って、盤面の端と端を繋ぐ線を1本だけ引く。\n三角は線の端点になる。\n四角は線の交点になる。四角以外で交差してはならない。\n数字は、線によって区切られた領域の面積の順位を表す。例として、面積8,5,5,2なら順位は1/2/2/4である。",
   "pdfUrl": "data/assets/pdf/04_成長のらせん.pdf",
   "puzzles": [
     {
@@ -99,12 +100,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVRtb9pADP6eXzHd15408kIKkfYhpbRr11LagRhECAUaIG3CdUdCWVD72+tzgvJCwrRK0+ks57Hjs31+bv07tLlDdVhqg9aoDEvRddyypuGuJavnBp5jfKFmGCwZB4XSuw6d297aodfD5U2Lma/n5q9NIxiN5MtaeFUbPF08nTz4P65clcsXnUb3tnvrKgvze+vsXm+f6N1w3Q+czb0vnz31R715d7BoKn/anZEWje5q9evR/OvG7H+TrCSFsWQRhVDcMhm/R+13CxSqjqVd9GDsoolhjd9o1E/VRqr+NHYgO8aOqCox8EcZ41CinwpA2wPgJqPzEJwV9MYUZEiBEptz9jqZs5AH7gv8ApCiasIH7JhmuU8dfY7Hqdf/GkdN84FIFT5a4oORKnzSfKrj6IlPZRxo0gW2SkHZg1bTSEV5jrKGso7yBn3aKAcoWyg1lDr6nIrLkiRLUXAY41X/vA4zA9NB1sybrEM+t2fOxNnas4AY8eRmLTlsFfpTh+cgj7EXz12VRdibcqC7WDHulJoE6DwuqkIJU0moKeOPIqeAhwn+antevhRkdA6auXzm5aGAu7lvvNcc4tvBMgdM7QD4v17CveciOatCLwM73zX72S6c5qfdeJPIluC2VApXLpjcNCKTRpfAyAzZaXQPVL41oqFgskUIbcI8+qEXuDPmMThSYDC0MGXIbQXUdqoO0C60VsJ9mGd4DWId1CGohxSIuoYV9SgRCZxhCKESn22gAvwXv2fMn0KNFsl0CZ4lKDd8ZM/h/rkRdDHjMtr7MgTPjpQBQfZlCDUuQ2glZYjqRBnxhU9uPlWBGL0tc0vSb47f4uuq/dNzm31N/9NzsU0YzvgRkqfGIlxCdUCPsD1jLcMriJ2xFvEDGotkD5kMaAmZAS3yGaBDSgN4wGrAKogtoha5LbIq0lscdcBwcVSW5NZY+gA=&a=RZBRCsUgDATv0m9/1CTvMKX3v0Z36oYHyg5hsoL3/QzONdcec8WY1zi8dT/WbKVZucqs3Oa9/j4cuh/T40442tFsu5OMZvWFO+lI97AX7iGzmV37uGU/5bcDl99lln4LrnY0y+5R5u8wfb2LW94lyz5Z+OcjOc8L",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVVtb+JIDP7Or1jN1450eeEtke4DpbTbXktpF8RBhFCgAdImTG9IKBvU/vbaDhQSQtCu9hRiOc+YZ+yJH2fxX2hLh1fg0qtc4SpculKku6zgb3u13cBzzG+8FgYzIcHh/L7JJ7a3cPhNb3ZbF7W3i9q/y2rQ76tXSnitdJ8vn88e/X+uXV2ql81q665152rT2vf6+UO5cVZuhYtO4CwffPX8udNvT1rdqaH9bDT7xah/r5Ru+pO/lrXO3wVrk8KgYDGNcbpVNviIGh8WOFwfFNbRo7mOhqY1eOdRZ+dWd+4Pcw22aa6ZXmWmxXQGpSIPZ8VKCqiqaUBHoLQDjDICkEkMALNK/D3gp7WvpDmzpRRvw4kIZeC+wj8A0iqYA8Wox2MMjIH1HB4DMz3BY2gneXQFC8zngZY4zaPSXvk8Ku2Vz2NQ7fEZIpARU1SVOIaYjsV85XOcR9vUnsejUe35PPrXGebElE7vVdzsdTQG+uySuk0j24YG55FO9oKsQrZE9pZiGmS7ZOtki2TLFFNBiRQKllakAbC9Sn/+CTQMamUL4Q0XoZzYY2forOxxwMx4kuyvJLB56I8cmYA8IV49d57FsF1KgO50LqSTuYSg8zQ9RoVLGVQjIZ8wp0CGG/zN9rxkKTRfE9DYlWMvCQXSTTzTG08gvh3MEsDIDmAeL2bQEQkmZ546y8BOnpr9Yqd283en8V5gK0a3pXMNX9c6MsyoxqOreNxthy+PHmC03plRDyerxRg3oFP90AvcsfAEbIkYtDP0Hw1pDdzGzu3SOnr1GFSh02E6xz64PXAPxRG1TCtqc4YJnBMFuswXS6iA/kvPY+GPoEaL7Z0SfCag3PBJvISbUBJSLS6jsS0DFZhTBpBsy0A3LgO9jDKwOiwjfuHD29+qAFtvJdyM9I3Be/y6lF/6/O1/qv6nQbLaKFzIHJHvFtNwhtQBzVH73moWfkTYe6tp/EDGmOyhkgHNEDOgaT0DdChpAA9UDdgRYSNrWtuYVVreuNWBwnGrfZFbg8In&a=TZHLDcQgEEN7yZnDMMtvaonSfxuxF4+IhOQnYr9DuO+n8Fy1tVJbL/UqYGQbYmSfYmRbh3syssfm/umTR/KnTx7J2E3bzO7UPb9POce3A15i3s16eCUjl4vhWfLQF9rSEepzl33m+h2OZGTgH/05ips89KWHGfKA3ZIdLA98bvLA57b/OX1u28PMLXfZZ9eN77Ifjed5AQ==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

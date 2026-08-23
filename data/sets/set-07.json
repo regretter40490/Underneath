@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/lilysplash-01.png",
   "descriptionShort": "",
   "descriptionFull": "縦横にマスの中央を通る線を引く。",
+  "descriptionFullCleared": "縦横にマスの中央を通る線を引く。\nどの線もちょうど1回曲がる。\nどの線も、2つの「島」(線で区切られた白マスの塊)を外から繋ぐ。\n線と「島」は単一のループをなす。(「島」のすべてのマスを通る必要はない)\n線同士は共有点を持たない。",
   "pdfUrl": "data/assets/pdf/07_蓮葉跳び.pdf",
   "puzzles": [
     {
@@ -59,12 +60,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=vVXvU9tGEP3uv6Kjr9lO73T6PdMPxoE0KRCTwlCs8TDCCDCRUSpLQMWQvz3v9k7YsiHf2rF9fn63+3b3fLta/tNkVU4eKVIRCZL6FePbd/Ht80fY1/G8LvLkFxo29U1ZARB93tujq6xY5vTp7GZ/VA4f3g//vo/qyUR+EM1HcXq7d/vuy+LPj3NVyb3DaHwwPpi718M/RjtHwe67YNwsT+r8/mghd25PJsdX49Pr2P1393DitZPPwv80ufrtfnjy+yC1OUwHqSMdclz+TL+3+99Tx3dITQdP7ZfkqT1P0ukztScrGK3gX8kT1kNeJa9nvO7x6vJ6DFNqFa/veRW8+rzus81u8uQEAYWek7jkhB5FLqPIpUgZpCiW3W7oG+RTGBgUUGR8YdchqBi7yKfYqMTuC5IUmxj4b6xyFFMsDJIUxUYZemY3QDTjCxSYuMg5CA0KKYgMiigwvkFModkNQ5MLSj3lgkco2I0DcmM4hTh6xjBmHAJDgnFEyu1sYmDDgyOlkCxj8ApJaqwEqcDySgJbPtA8CmaseRwSY1xTXQxjFxglMsYFDpAyYx/Y5AbbFRbQFFaTsY0loC+svoC+sPoC+sLqC+gLqy+gL0yNSoSkpM1fIJboYqFeYWsXqFfaWBJxPWsvEdezvKd5m5uneRvXQw4dxj+lQuursf7bGEM/tL4hfPW1ZAzN0OqH0NHXgTFq1FeSMerqsIKNsr6Mrb2CvbJnolC7srUr+KrOF7UrW7vCmSibG2aKwbhEHl+lIElTGZELB/j7U0plTK4gV+IW4ZdWCvHt4lZFU7RcqHt3MEhxhWL6VXbvSL95WhGgi8GAEeAsy+J82VRX2Sw/zx+zWe0kZjyt7/S4u2ZxkVc9qijLb8X87jWFbstJ6qqx3Pz6rqzy1c6GeX55/ZaS3uqRRuqirC43UnrIiqJfCs/tHjWbV7OiT9XVvPc7q6ryoccssvqmR1xkNab88mb+ra+U322cZZ31U8y+ZhvRFqvjeB44jw5/UkV4suhxHSftkNoPSW+iU3uEeX2QtCM9rlNHj3ZyFk1Rz2dlUSKk5iSPYnZ0AXdX8JT3NRoZEncJE5+h9joDNAd1vm+YcZK2x+To0DvsrKGzKO+Ru0lN/56ViwtUlzpr58OpLZvL8mtjTaV+ygxNAftdAQjyZgH86HopQENTgEa2AClWFei6/tsK4umz+a/E//xAXX/WrA+LlwnwaNu7rH7S4avNTfqVPgf7k1Zf232Nf6Ot13Y3+a0e1slutzHYVzoZ7GYzg9ruZ5BbLQ3uja7WqpuNrbPa7G0daqu9daj1Dk+ngx8=&a=Rc1RCsYwCAPgu/Q5D412Wz2L9P7XaJj/+oPgh4SYuZCNAc4bbCg+L62DboffVct5GKM4waHQj1FlfimrwqJ1F/XvP2sD",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVbfU9s4EH7PX3Hj12rmLFmWf8zcQ6DQa49S6MFwJJNhQhogbYJ7jgOcGfq399vVOokT6PThOkmsL5+kT7vaXVnzfxfDcqxifKJUhUrjY0zKPxvSt/mcTKrpOP9NdRfVTVECKPVhf19dDafzsXp3fnOwW3TvX3f/uUurXk+/CRdvw7PP+59ffZz99XYSlXr/MD16f/R+Yq67f+7uHLu9V+5oMT+txnfHM73z+bR3cnV0dp2Z//YOe7bufQjjd72r3++6p390+mLDoNMPdKACw7/Bt/rgWz+IAxUNOo/1x/yxvsj7gydVn65guoJ/54+BsUEeqSCKuLGGm1ijwYDD/BFPzc9zfu7z0/DzBCqqjvj5mp8hP2N+HvCYPSyRYQvDMMiNCtACZ4IzpXXqsU6VNonHJlE6ch5HDrjhMabBGnNNM5ew6Gus1eDQQB+eMCYb4BxwBjr0NCzLlmSGLSAUqQx7QsiqLPYoxhRPooWqH4oWq3kBtLBOVouwWiR8BN4Kj+RZ4ghWW7EUiYb/gsl78Yw8NsIbjI+a8dBpxhtgI5qG1l3zPhSXYLJAtDBfTNMYwlMRqDMO1y7CFcdGxTG8TZAIjDGVcQSMuDBGfcSwkrEFxkYxdsCIEeMEGFYyTldYYwzFfYllvMZ4ih3jDBhmMsZcLXPhbUwmM9bAYht2v8HWolBjr8PY+rlowfu56Fc29T6CA/b2gwP2PoID9raBW+EQmlr0CVM+M4Y+bS1h5KHVoq+xFuUhYwMsdiJ7rJZ1NdZtMDLMhmID44aHPWFjA+yh7GGcAIs+nVBUxIxhgxUbLNZNRNNC04qmhaYVTQudVHQS6Cc+RjaBX6loJhSLBiNGjS8p7WGDsZZgjMUYySX4G4uP4FRsmxxALkmMwCFPJAcQr1jiBW6JLXLGSv54LPYjf6zkCfoR6yYWFHexDflsJbfBAcs+IIdtKprIbZuKTgqdTPY5hU4mNmSUh6KDUyQ24peBX0ZqxMAvOtMYI8+d+IXzLXbil4OOkzx30HGyVw575UTHYQ+d7KeDvpO1HPSd6DvSJ4witlzKLu/jGP61X6rwFC1VWYYW554N0aIyjdkejuLFKYbDC+cdjj/kW+xekjaRwsmJFKbIZ8qFA7xTEnpvdTokRK9l+uBk/hmEFyVeicG8mF7MF+XVcDS+GD8MR1WQ+9f1ek+Lu13MLsdli5oWxdfp5PY5haYryKtyIdzk+rYox6uejeHjT9cvKVFXi/RSl0X5acOk++F02naFbzEtajQpR9M2VZWT1v9hWRb3LWY2rG5axOWwwq1nfjP52lYa327sZTVsmzj8MtxYbbbajqdO8BDwrx8pvJXo+pLldVfVb/LWDUfVx7i/vM/rPbq+9AO66qhgtphWk1ExLbAkcZrvHzwRaYhLyBKecT+hXU8mgIce0qxzQL9RFweeOcr79YkKaOkdnkwwmBV3sN2bRv9HxewS3vWDtf1h0+aLT8WXhQzVdOvqegcOGgewyIsO8FVu6QBB7wAhcUCj4BoPyK9f60E2ePKxCn/ygvl/3SLXryjrZ9zyVHiQ8i7KH1T4qnOTfqbOwf6g1Nd6n+NfKOu13k1+q4bJ2O0yBvtMJYPdLGZQ2/UMcqukwb1Q1aS6Wdhk1WZt01Jb5U1LrVd4f9D5Dg==&a=RdBRDsMgDAPQu/Q7H8RQRs6Cev9r1FE8Kk3iySXO2r0f2xfcMLv5ZcVRhPk6PGkn74+zyIfr8J/2xrR6SfxEP73JUMpDDcmoFT0MjZfExb9EDvZqjERTykNjJFqtGMvgvC+GyDKv3mRUw82X11jScwW/z/d7Xg==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/outside_insights-01.png",
   "descriptionShort": "",
   "descriptionFull": "点を縦横に繋ぐ線を引く。",
+  "descriptionFullCleared": "点を縦横に繋ぐ線を引く。\n線は自己交差のない単一のループをなす。\n数字は、そのマスの縦横4方向に引く線の本数を表す。\n白丸は、線に触れることなく他の丸と直線で繋ぐことができる。(斜めも含む)\n黒丸は、線に触れることなく他の丸と直線で繋ぐことができない。",
   "pdfUrl": "data/assets/pdf/09_アウトサイド・インサイト.pdf",
   "puzzles": [
     {
@@ -99,12 +100,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVTvb6JAEP3uX3HZr93k+CUqyX2gVnvttda2Gq8SYtCi0oLbQ7Aepv3bOztgZYE2lyYXwmT2zfJ2hp036z+xE7pUh0dtUonK8Ci6jq+safhK2TPwIt81vlEzjpYsBIfSq26Xzh1/7dLzu+VFm5nPJ+bvTTMaj+VTKT6TRg/dh6Ob4NeZp4Zyt9fsX/YvPWVh/mwfX+udI70fr4eRu7kO5OOH4Xgw748WLeVvpzfWkvGVVD8fz79vzOGPmpXlYNcsohJKZHgVYr+SGQumHnm1iHu/cLfMI1S1a7vkxtglE8OyX2gyPLjNg3tr7MD20MrGjmitOjEszivblNRVYaU1+ErJVg05H2vgzvdYKx9r5r/T5Tynrqj5mIqc+1U9z6nrAkuaJ/wDvmpIhxgUcgeFKDogCiUzL5z57uQ23ajy0+QiqimVqFaJVvLWK3kx//JenmsJ1St5GxW8UGAX70tBO4CLpImK9gSthLaO9gL3dNCO0LbRamh13NPgrVCrWYqCbZ8+9a/70JzQe2TN/Mk6DufOzJ24W2cWESOVSD4iYKs4mLqhAPmMPfneqophHxJAb7FioVsZ4iBXxwdUPESMKIwFpikL7wspPTu+L5aCs0OA0vsSoCj0hLUThuxZQAInWgrA1Ilg0qyX3pPI5K4K/zJyxBSdR6dwWnD4Gy81siX4WiqFK+dzomUkJk1OU0XtpwpNrmFQXBpJj88Ji6QtGcR+5M2Yz+DIDIMuQ0Er4HYO7gjj3GtngpfA773LFnRqif2e9A0rGVDCzz7Gr7lLAraB5JEC1+mwAyD3g2DeQaXxPXuM38cLdLiJFWRf/GMZwLQvg7tpGdwrlpHVmSvj4ktl5GZ2oYaW/ZJel/SFYZ5Owv80LraZwln4icgPwSJcIXVAP1F7LlqFfyDsXLSIl2TMky0rGdAKMQNa1DNAZUkDWFI1YB8Im7MWtc2zKsqbH1VSOD8qL3LLrr0B&a=RZFRCsQgDAXv0m9/ookepvT+1+h73QkLSgbXmQp738/wuiLWiMgR1/jx1P5YZ1GwZmxYMw6sOWF7C3fKnbjmRd9nk47nalZj0XEj6dhbdDyzWV7i2kvcDPH8c2l/rLNupprdMRdvc69oulc03SianrtZ3sYt9do1b/pubDr2Du7WW9o1H95m7+DaO7j2+o5/P3zL87vz+zO9nhc=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVRvT+JOEH7Pp7jsWzf59Q8tbZN7gQieniIqhJOGkIIFqi3rlRa5Ev3szk6LdNtqLuZ+WZjMPDOdndndZ9a/Yyd0aQOWalCJyrBUqY5/XeK//ep7ke9a32gzjpYsBIXSq06Hzh1/7dLzu+VFizWfT5q/NkY0GsmnUnwmDR86D0c3wc8zTw3lTtfoXfYuPWXR/NE6vtbbR3ovXg8id3MdyMcPg1F/3hsuTOVPuzuqJ6MrSTsfzf/bNAffa3ZWw7hmE5VQIsNfIeNXMmPB1COvNnHvF+6WeYSq49ouubF2ycSyxy80GRxU46DeWjuQXZSytSOaoRILc8tjSjTTzFm61OCWklkNLedraBiZ+RqpD6pDS8hppFn2loaR2XeGfoiEgu6gIKUOiELJzAtnvju5TQMVHVC5iKpSFapztJQBdyrHGlWoWZnBVCpjK+s1K+qFBjt47grKPlwITVSUJygllBrKC4xpoxyibKGso9QxpsGvtFazlTo+3v3S/r0Fzw9eF1kzf7KOw7kzcyfu1plFxEpJkPcI2CoOpm4oQD5jT763qsqwdwmgt1ix0K10cZC//w9ScRexojAWMk1ZeF8o6dnxfbEVnA0ClN6kAEWhJ9hOGLJnAQmcaCkAUyeCWbJeek9iJndVOMvIEUt0Hp3CbsHhNF5qZEvwb6tU4de1S0wradLkNGXXfm7Q5BpGwaWV3PFJYJP0sQaxH3kz5jPYMsPg/eGHCqjtlNlcHaKfa62M7hLo3Xd6A4NtkQlJz7KTPiV872P8mqskYBsoHlOgnY4zAHIHBBMNOo3v2WP8Plzg7Texg+yLv2wDMu3b4GraBteKbWR95tq4+FIbualc6MEcv6TXJX1hXKcz8n8aJNuM4Sz8hOQHZxGuoDqgn7A9563CPyB2zlvESzTmxZaZDGgFmQEt8hmgMqUBLLEasA+IzbMWuc2rKtKbb1ViON8qT3J7XHsD&a=TZLdCcNADIN36fM9nH3/s4Tuv0alWG4CB/oIkuyaXte38H2stWKtF/uU4J4M7UMMbfPhngxtSwztWwxt5+GeDO01mDpMjFlDszgz+9mXWXqni+EZ8lCHdqBO7TBffvJKhn/KT17J7yxmLu1J3mJ+29qZfQv3uhm6dTf2bfUwd+Rn7miH/fKTTzJyW7+XejQX6lU96POqHvR51Q7sOLoh1Gvcx+uTvdmSkbXIssMtdvDa4Y+emy0ZnZadExx3Y59b7EP9d6Lvn0Uu/PGn4/v+AA==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/excessive_streetlights-01.png",
   "descriptionShort": "",
   "descriptionFull": "いくつかのマスを黒く塗る。",
+  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n丸数字は、それを中心とする2×2マス分の正方形領域のうち、黒く塗られる面積を表す。数字が辺上やマス内にあるときも同様である。\n黒マスはすべて縦横にひとつながりになる。",
   "pdfUrl": "data/assets/pdf/06_過剰な街灯.pdf",
   "puzzles": [
     {
@@ -159,12 +160,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=vZTvT+JMEMff9694sm/d5PqD8qPJvaiIPnqKqBBOmoYULFBtWW/bIleif7uzUwjdFs1dcndZOkw/s8zO7O6X+EfqcZ82YBhNqlINhqHW8Kmr4rMb/SAJfes/aqfJgnFwKL3u0pkXxj69uF9ctpn9cmJ/XzWT0Ug7U9Nzdfh4+nh0G307DwyunXabvaveVaDP7f/bxzf1zlG9l8aDxF/dRNrx42DUn/WG85b+s9Md1bLRtWpejGZfVvbgq+JsS3AVh+iE4qMR9y27e3MIoZqrbLJba5ONLcd9pdlg7zb37p21Adu1NsRoEAsT1SGNSlxKamqFtATRCsRsluc09DJpYh6jQDTTLCfS4QuQKiEsSZplVpChY65iesNAtK8BWtSw0Xu0p2h1tH3YB5oZaE/QqmhNtJc4p4N2iLaNtoa2jnMaYicVxdFreE12w/zzb3DScKgkZuE4TvnMm/pjf+1NE2Ll960YIVbC0y1aptHE59KskLHnMFgeSrALSTCYLxn3D4YE9B/mH6USoQOpJow/lGp68cJQbgVVKKFpwKehjBIeSO8e5+xFIpGXLCQw8RJQbbwInuVM/rK0l4knl+g9eaXVov12vCpkTfBxDKrnAmxZmU2zs/w27iRKsxtQ4JWVdYUAc7FSEqVhEkxZyGDJLYP7h5ddB7ezd4cYF147h5oKflf4Qj/g34Ofb9X4Ms/Us5ysT4lY/Bh/LlwSsRVUjznwfcqiCfTnkMIOUQMCcfrAntLtVE0Iys5buPvFFiDJrgXh5i0Ir9JC3tnf7aDlvuanpf7Wn+Q/+B9ZbwXO+Cca3wfL+IDUgX6i9kL0EP9A2IVomVdULIqtChnoAS0DLcsZUFXRACuiBvaBrkXWsrRFVWV1i6UqAhdLFTXuuMo7&a=VcuxDUQhDATRXhwT3AE2u7Ug+m8DJvwSepIZe+/oFS3GAoEf8weE/AM1qdVhAONiXBM4E2fiQqyIoHyYP7NsggmuOG1/3rk=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=vVVhT+JMEP7Or7jsVze57raU0uQ+IKKvniIqhFcaQgoWqLasV1r0LdHf7uwUD7aL5r0PZ5qdTJ8Znp3Z7jMsf2V+ElAHHtOhBmXwmBbHxY06LmPzdMM0CtxvtJGlc5GAQ+llm079aBnQs9v5eVM0no4a/66cdDBgJ0Z2avTvj+8PruOfp6GZsOO207noXIR81vineXhltw7sTrbspcHqKmaH971Bd9rpz+r8v1Z7YOWDS6N6Nph+XzV6PyrepoRhxSOcUFyMDF/zm1ePEMqGlXV+7a7zkesNX2je27rO1r1x12Db7ppULeJ6QEBtoDHIkBK7LhGg/Y3UquUcxsxyEqs6WpZt6BDXIdxQgWpMQqYC6TsWdalZtp5V0+gdpFeyHKRXuOp4NEpWHenVLK1tbmDbu1mc6Vkcs3bpOdfq4hzPS+HiWJcCmdpJcFNrm1vIpdBbOpel9cgtrF6BqqWPBteJ4aW6RXuMlqPtwp2juYn2CK2Btor2HHNaaPtom2gttDbm1OStrVQ8bqMot0/1a99BcyAvshTRaJklU38SjIJnf5ISt1D+boS4aZJtoEUWj4NEyYqEeIzCxT6C95AChrOFSIK9IQkGd7OPqGRoD9VYJHelmp78KFJbwYmoQJMwmUQqlCah8u4niXhSkNhP5wow9lOYn8t5+KgyBYvSWaa+WqL/4Jd2i7fH8VIhzwSXZ1JejMK6mzdoflLc+/dhSfMrmIUXbt6Wo7AYm5TEWZSGExEJ2HKDwe3ES87BbW3dPsal1yxAZoDflr4BigD/FvziqEbnBVPH9fIuJXLzQ/y5dEksVlA9cuD7RMRj6M8jOydETQgsszvxkG1SmZRbo2jh5n+2ACTvLUi3aEF6WgtFZ3+3g/rwpfhaxh/9XX3BlHneCFwkn2h8GyzDe6QO6Cdq34nuwz8Q9k60jGsqlsXqQgZ0j5YBLcsZIF3RAGqiBuwDXUvWsrRlVWV1y600gcutdjXuDStv&a=VY3BDcQwCAR78TuPOAYMtVjpv40we6+TohGL2ck5Y973uJpTfMQlGpzazN8c4m4+QjUWxZWAaNiMnWExiuYN58GxORpHEMTgJDgJ7VBtpq0JadJNpEk3eShi8Y9SrPFe5+97Pw==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

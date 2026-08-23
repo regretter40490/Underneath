@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/ice_quest-01.png",
   "descriptionShort": "",
   "descriptionFull": "点線に沿って縦横に線を引く。",
+  "descriptionFullCleared": "点線に沿って縦横に線を引く。\n線で区切られた各領域は2色の塊をちょうど1つずつ含む。\n各領域において、2色の塊を切り離して(回転反転を許して)組み合わせると正方形を作ることができる。",
   "pdfUrl": "data/assets/pdf/13_アイスクエスト.pdf",
   "puzzles": [
     {

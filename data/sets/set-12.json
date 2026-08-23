@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/SyrupCookie-01.png",
   "descriptionShort": "",
   "descriptionFull": "いくつかのマスを黒く塗る。",
+  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n記号のマスは塗らない。\n同じ記号は同じ白マスの塊に、異なる記号は異なる白マスの塊に含まれる。\n数字は、その列のうち塗られる面積を表す。\n繋がっているマスは、全体を塗るか塗らないかのいずれかである。",
   "pdfUrl": "data/assets/pdf/12_シロップ漬けクッキー缶.pdf",
   "puzzles": [
     {
@@ -209,7 +210,8 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=vVVrb5tIFP3uX7Garx1pmeFhQNoPTmp3201Sp0mUjZFlEZskpNh0MSRZovS399xhKA87kVaqVhbjw5n7OHfgXrb/FGEWcY+73HS5wQV+pmtw05L4N9Vl6N95nCeR/xsfFfldmgFw/nky4Tdhso34p6u7o8N09Ph+9PeDm89m4oNRfDQu7yf3776s//oYm5mYnLjT4+lxLG9Hfx4enDrjd8602F7k0cPpWhzcX8zOb6aXt578d3wys8rZZ8P+NLv5/WF08ccg0Brmg4AJxpnEJdj8e3n2PWCMi/ngufziP5cLP5i/8PKigW4Dz/xnrCf+M5Mu8wNmwlGF4cwSRNgNYVs9C2dIhNUQrtEjPLPnIgyHGGj9yQivYwM5Qom6IlG0B36bhxmVxJlJ/labEZKywmgVh+t0s1oc1zzJGzamiDlRkaVaz3ECvDTV+l6thlpttR4pm7FaL9V6qFYLqsTQ5MKFEFLsOsDIpPAQGOdIeGi3MNmgFMKewaWBY9FYeDhm5Qt7T9t7LpdC8x5itnjhVXGkkLCp4igs7QpLExhPSmGLS7PSJk2nwTY0ONqXsF3lknjdf2IHvkNtT9ip41McrcH0uLRw+oofNtgQ0KY1EDak1ok49FQUtoGruvAPrGMa0C+qs5UG7IW2J2xoDQK5zDovNNTYgq+l8xK2dRwbmu26FuChzuUgDr2zygb2Tm1PvnUc6K+xDc2O1uxAs0Nx8FI46pUZUksNBgEU0chofnj6/+c9BgJ6n23TZLEtsptwGS2ip3CZM78aS+0d5udZoalNsb6Oso5VkqbfknizL0C91SHj202aRXu3iIxWt6+Foq09oa7TbNXT9BgmSbcUNa871DLOlkmXyrO4cx9mWfrYYdZhftchrsMc0317F3/rRoo2vbOkAdOJ/TXsZVs3x/EyYE9MXQFes2pOe3454uUHzMHWJOflKQb1sV+OaU7TTPcw1tZFksfLNEmRsprzNKyUowQcVzPbNYAvlQGxh5WBIPZEY8ArwO7ULKd+UJ5zRtkPlDtBtk4fIL9SR/fLdH2NAgPWOiJuYmNbrNKvRT3QaeSOqhrO6hpoNL9RA4KoGjSsSiC0pwSqjEqonvbi6BdXAFNv/lI9LuM/fUzb37Bf9dXpjZkn3eFp9kaTN5t9ek+vg32j3Vu7+/hXOru12+d32pjE7nYy2D3NDLbfz6B2WxrkTleDe6WxKWq/t0lVv70p1U6HU6p2kwfzwQ8=&a=VczBDQAhCETRXjx7WAUFajH234Z8bptsXjLOsOe0Mb7W04FTSi1XKpRCJ0SdwEjZqIEni3Zt4G1HYtwaO6N1zpzoFdlFwQ8i2u3n990H",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

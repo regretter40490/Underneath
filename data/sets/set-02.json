@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/biscuit_factory-01.png",
   "descriptionShort": "",
   "descriptionFull": "いくつかのマスを黒く塗る。",
+  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n×が書かれたマスは塗らない。\nすべての黒マスの塊は1つ以上の丸数字を含む。\n丸数字Nは、それを含む黒領域を点線に沿って切り分けることで(回転反転を許して)N個の合同な図形に分割できることを表す。",
   "pdfUrl": "data/assets/pdf/02_ビスケット工場.pdf",
   "puzzles": [
     {

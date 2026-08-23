@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/radio_cassette-01.png",
   "descriptionShort": "",
   "descriptionFull": "縦横にマスの中央を通る線を引く。",
+  "descriptionFullCleared": "縦横にマスの中央を通る線を引く。\n線の始点は▷、終点は□になる。\n線はすべての○を通る。\n線は黒マスを通らない。\n同じ数字からは同じ形の線が、少なくともその数字の長さだけ伸びる。",
   "pdfUrl": "data/assets/pdf/10_ラジカセ.pdf",
   "puzzles": [
     {
@@ -199,12 +200,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVTfb9owEH7PXzH5tZaWH0Ah0h5SCl07oLQDMYgiFGiAtAnunIR2Ru3f3rMNIk5o1YdOJqeP7+zznc+fk7+ZTwN8CsOqYx0bMCy9Ir6azn/7MQjTKLC/YSdLV4QCwPi63cYLP0oCfDVedZrEeTp3/mzq6WRiXOjZpT66b9+f3Ma/LkOLGu1evd/td0Nz6fxsnt3UWie1fpYM02BzExtn98PJYNEfLRvmv1ZvUmGTa716NVl83zjDH5q7y8HTXGQgjEz4DOS9ss6rICxP27Jbe8umtuu9YDY8wPoB/ra3yKoh2wDcA1zRke2iCsI1iKYjD6OqUWLqnLHyTENlIJhhb8GOIaR5Ck4DI3mq0y7CBiypm5JNaUjD5SqVPCxpi4WmsANIEjNL2HNhdWGrwnbEnJawI2GbwlaErYk5p7xMTXPNiujiflS//h/0AU4cJSSaJhld+PNgGjz78xTZ8jbkPQq3zuJZQBUqIuQxCtfHIuxdyE5ptuPC5ZrQ4OApTA/ulu9F4i6FlKFmhN4VUnryo0gtRbRToeYhnUcqBe1V/vuUkieFif10pRAzPwVRJavwUY0UrAtnmfpqiv6DX9gtPhzHi4aekfhcC5u8XVvWsJmD2QVc3ZyAMLsBeXRtNubqcJG8rnEWpeGcRAS23HFw/8RCE2DrAEfCz1FTkoYOuMexDgIBPAasXnvM+rbLBhjx7c9EAA5RTDaQv0yP/5+TeAYVuih3RiB0KDa7Iw/ZbqqQkSOL6HyyCAiyL4JDWQRHpSJkbbwG2e5p5+sraHgvsl/6J98w+Xrln53/9JI87yRO6AcqPziL9BGtA/uB3HPeY/w70s55i3xJxzzZspSBPaJmYIuCBqqsaSBLsgbuHWXzqEVx86yK+uZblSTOt8qr3PW0Nw==&a=RZHbyWMxGMR6yfM8bGx/t1oO6b+NzB8ZFgIjgiWDz/N89LzW0Qq9X/qjfSm0EkrtgkqrodYaaLT//chz3lDo4FrcGJ6N4TkYnsCwGAtKBbed0sE1xaXWoeIJKp6k4lhScSw3VEpcJxI3RnndUUH+o6g4VlQcKyqO1YFaRcWxxnWicZ1oXCca14nGdaJ5XScG14nBdWJwLQ6GxcGwOLypxWv4+HCH5xo+/jvn7/r/9/kC",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVRdb9owFH3Pr5j8WkvLB5+R9hAodO2A0g7EIIpQoAHSJrgzCe2M2t/eaxtEnNCqD51MLsfn2tf32j7e/E19GuAqNKuGdWxAs/SS+Co6/x3aIEyiwP6GnTRZEQoA4+t2Gy/8aBPgq/Gq0yTO07nzZ1tLJhPjQk8v9dF9+/7sNv51GVrUaPdq/W6/G5pL52ezcVNpnVX66WaYBNub2GjcDyeDRX+0rJv/Wr1JiU2u9fLVZPF96wx/aO4+B09zkYEwMuEzkPfKOq+CsDxtx27tHZvarveC2fAIa0f4294hS0e2gVGtBH9A9ThVRbaLyghXIKiOPIzKBaZqqgxMNewd2DEPUAEnBJVbOe0ibMAUqy7ZhIY0XK4SycOUtphoCjuAzDCzhD0XVhe2LGxHjGkJOxK2KWxJ2IoYU+W1aZprlsTRHVr563uw+bDNaEOi6SalC38eTINnf54gW16BrEfh1mk8C6hCRYQ8RuH6VISDC9kJTfdcuFwTGhw9ueHB3fK9SNylkDLUjNC7XEpPfhSppYjjVKh5SOeRSsHxKn2fUvKkMLGfrBRi5iegpM0qfFQjBevcXia+mqL/4OdWi4/b8aKhZyQ+18ImP64dq9vMwewCrm5GNZjdgCa6NmtwSbhIXtc4jZJwTiICS+45uH9iogmwdYQj4eeoKUlDB9zjWAeBAB4DVsTA+rbLBhjxxRtiOocoJlvIXibH+3MSz6A+F2V2CLQNpaZ35CHdDxUicmQJnU+WAEEOJXAoS+CoUIKsjFcgD3va+foK6t6LPC39k8+WfKmyj85/ekee9wIn9AONH515+oTSgf1A7BnvKf4dYWe8eb6gYp5sUcjAntAysHk5A1VUNJAFUQP3jq551Ly0eVZ5dfOlCgLnS2U17nraGw==&a=RdFdqsMwDEThveR5HmpZf15L6P63kWlG3AsBHYw/Udz7/uK+zGGBdeFXeypgqUpYqQrWqoYd1YF/3iJ0iZ1wiV3YEiyfamxZQl+qhTBVImS5IiQIQyI+CAlWTi2kLFfkVhVSlity7EHql3KMJSwJwnJVoyQIS4KjJepPsHrK0Xo1wpbgGMFLR5t56eiFeHAkON4z/g//3/cB",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

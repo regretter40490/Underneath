@@ -3,7 +3,8 @@
   "setTitle": "仲良し団地",
   "icon": "data/assets/icons/friendly_mansion-01.png",
   "descriptionShort": "",
-  "descriptionFull": "いくつかのマスを黒く塗る。",
+  "descriptionFull": "点線に沿って線を引く。",
+  "descriptionFullCleared": "点線に沿って線を引く。\n線で区切られたすべての領域は長方形になる。\nすべての領域は黒丸をちょうど1つ含む。\n数字は、その領域に縦横に隣接する領域の数を表す。\n黒丸は領域の角になる。",
   "pdfUrl": "data/assets/pdf/01_仲良し団地.pdf",
   "puzzles": [
     {
@@ -53,18 +54,20 @@
     },
     {
       "id": "10",
-      "penpaUrl": "./penpa-edit/?m=solve&p=vVTvb6JMEP7OX3HZr93L8UOrJbkPaLFve9XansYrhBikqLTg9hbQvmvav72zi40s0qb34S64k2eewdmd2XlIf+c+DXETHqON9ZaKNfxVw7oODqyGyn9vzyjK4tD8gq08WxIKAOOrXg/P/TgN8cXt8rJLrM2p9WvdzhxHO1Pzc3Vy37s/ukl+nEcG1XqD9rA/7Ef6wvqv27k+to+Oh3k6zsL1daJ17sfOaD6cLE70/+2B02DOldq8cObf1tb4u+LuzuApLtIRFktD3guzX1wA2PCULbsxt2xqut4zZuM9bO/hT3MLdmBukaEh00UIt0QajAyj4rdlv1Hxm62yD0k1kfpW2J6wurAj2BkzQ9hTYVVhm8JeindsYSfCdoVtCHss3mnxsyuKq/O7KZ7m5xA0C9qCUhJP05zO/SCchk9+kCGzuLJyROJWeTILqUTFhDzG0aouw1tIIqPFitCwNsTJ8G7xXioeqkk1I/SOnymj+Y7f+HEslyKGWaKCiAaxTGU0knyfUrKRmMTPlhIx8zOY/HQZPcqZwlWll5kvd81/8Cu7JftuPCvoCYnlGljn17VlJyazMDuD2SpNOWbXMMN9kw34CPOx02AEkzzOooDEBLbccTBPQg06QHsPJyLOUbcgNRXwoMAtgLcAi05NL4tEQ9NlI4z43h3xbw5RQtZwePE34QckmUF5Lio1CKQIleZ35CHfvapxfVhFBfYnK4AkbxVwWFTAUU0FvLC/W8GJ91xclvpHX5l/8Fl42umb0A8kvg9W6RqhA/uB1kvROv4dWZeiVf5AxPywhzoGtkbKwFbVDNShoIE80DRw78iaZ60qm5+qKm6+1YG++VZlibue8go=&a=TY5RCgAhCETv0rcfjS7sdpbo/tdoJl0IhPcwG51zmaqhhwFuaEYf9J4uApfz7Th7/7wI/j+unKecs/6l+3s56ZUjRu0So3aJkfmDcTqv5a2qtQE=",
+      "penpaUrl": "./penpa-edit/?m=solve&p=vVTRT+JOEH7vX3HZV/fy67Yg2OQeKhZPTxE9CGebhhQsUG1Zb9uCvyX6tzu7xdAt1XgPdyk7+eabMrszO1/T33nAQtyEx2xjo6Vjgr8SbBjgwGro4vf2DKIsDq0v2M6zBWUAML7qdvEsiNMQn98uLjrUXp/Yv1btzHXJqZ6f6aP77v3BTfLjLDIZ6fba/cv+ZWTM7e+d4+tD5+Cwn6fDLFxdJ+T4fugOZv3R/Mj43+m5De5e6c1zd/bfyh5+07ztGXzNQwbCchHkv3DnxQOATV/b8Btrw8eW5z9jPtzB9g7+tDZge9YGmQRZHkK4JdNgZJoVv636jYrfbJV9SEpk6ltpu9Ia0g5gZ8xNaU+k1aVtSnsh33GkHUnbkbYh7aF8pyXOrmmeIe6meJqfQ9AsaAtKaTxOczYLpuE4fAqmGbKKKytHFG6ZJ5OQKVRM6WMcLesyvIUUMpovKQtrQ4IM7+bvpRKhmlQTyu7EmTKWb/l1EMdqKXKYFWoasWmsUhmLFD9gjK4VJgmyhUJMggwmP11Ej2qmcFnpZRaoXQsegspuya4bzxp6QnJ5JjbEdW34kcVtzE9htkpTjvk1zPClxXtihMXYERjBJI+zaEpjCltuOZgnqQYDoLODIxkXqFOQRAfcK3AL4C3AolPjiyJR3/L4ACOx97H8t4AooSs4vPyb9Kc0mUB5Hio1CKQIleZ39CHfvkqEPuyiAueTFUCStwoELCoQqKYCUdjfreDIfy4ui/zRV+YffBaetvqm7AOJ74JVukbowH6g9VK0jn9H1qVold8TsTjsvo6BrZEysFU1A7UvaCD3NA3cO7IWWavKFqeqiltstadvsVVZ4p6vvQI=&a=TY7BCQUxCER78ewhowv7U0tI/21kJvphQXgPE0fX2q4yjHQgHOb0SR/lIvBxvl1n7/9fBOevK+dp59/4lYvRs/J829nL3iVm7xKz8ifjdJ7Vrap9AA==",
       "prereqs": []
     },
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=vVTbTuMwEH3PV6z8ilfk0huReOgVCUGX7pbtQlRVbpqSgFuDk0CVCr6d8SSQJg1oediV5dGZM86Mx/ZJ+BAz6dEGDKtFdWrAMBsNnEathlPPxjiIuGd/o+048oUEQOmPwYAuGQ89enp12+ndtZ/67T+H9WvLuhwuD257o8vbxeS3MdKDQ6kPeWt9ftHr8IOT5Prcbz96fa9xEQrX5x5bsOR6crrh60Hrxl8a3VO/21qytR4+tMZHj53R8bHmZBuZag4xCcVpkOlL0n9xAFBrqm2Tn/Y2mdnO9Jkmlzls5fCXvQU7tLfErBPbITVCm5gHEjYVkftWTflQ5p0oLahhhtyvWyUf41ZONMzigiZW2PGxwHtF2KiB271CO0Broh1DNzSx0PbQ6mjraM9wTR/tBG0XbQ1tA9c01XlommOaeOvpqH8RwyvJxvc63AvcAAkFn4WxXDLXm3kb5kbETp/IbqTArePV3JMFigtxz4N1VYa3UIEMbtZCepUhRXqLm49SqVBFqrmQC7WnSMYZ/8Q4L7aC2ilQbiBdXqQiGRR8JqV4KjArFvkFYs4iUFroB/fFTN66dJYRK54au2Olaqv8NJ41siE4HYvCnSu1HNlJmyYn6Zt7ExRNRiCXczsZKrWo52nA01zFPApcwQWUzDh4Zig8E2A/hxOMK9RNSUMHPExxE+AVwPSkZmdpogvbScaUqNod/FpBshKPsHn8DH1XrObQnkN2DghUD53GC3EXZ0sNJZt22kH/LzuAJG8dKJh2oFBFB6qxf9vB0fQ5vSz9Sz+0//C32GT6FvITiefBMl0hdGA/0fpOtIr/QNY70TK/J2K12X0dA1shZWDLagZqX9BA7mkauA9krbKWla12VRa3KrWnb1VqV+LOVHsF&a=RZDRDcQgDEN36Tc/kASGqbr/GvVTnTupyE9ObFDv+xl815w55tK5hrjEOjBe2Mdb+8/RO/LW+Tim/GWWRpil3YN2Fk1zKpvOouksms7C1b68X1ZcvUOn3wlX78hLv7N0V/kutDvR3ay+7U46tnuYH+8wP95hftj5firf8wI=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=vVThT+JKEP/OX/GyX13zui2U0uQ+VARPTxE9CE8aQgoWqLasV1rkSvRvd3ZabLegeeaSy2ans7/ZnZ2Zzm9Xv2IndKkBQzOoQhkMrariVJUGTiUbPS/yXfMfasXRgoegUHrdbtOZ469cenG3uGxy6/nU+m9tRMMhO1Pic2Xw0H44ug1+nHtayNodo3vVvfLUufW9eXKjt470brzqR+76JmAnD/1hb9YdzBvq71ZnWE2G10rtYjj7d231v1XsLIZRxSYqoTgZGb2SKQ8mHnm1iXs/dzeEaqPKNrk1t8nYtEcvNOnnqpGrP80tyI65JapOTJsQWkd/lGhKaa3J6yoTay0HalV5g66KdbUA1OUN9dKBesluYESFGxoYkl4AMKbCFUwpR8UYIlCmHEG/7wjkz7AKdyjbKFWUPSgSTTSUpygVlDWUl7inhXKAsomyilLHPXVR5krFVg1sKAbdlX7F0Au6GLUvruvv2s7rMdPpsS6+YsIGEEyjOrSzKvTjGkqmQvtAf5AV98erOJw5U3fsbpxpRMy0iYsWCVvGwcQNJcjn/Mn3loc87EwS6M2XPHQPmgQo+vcDV8J0wNWEh/cipiiMM/zZ8X05FWS3BE29cOrLUBR60toJQ/4sIYETLSRg4kTwFqwW3pPsyV2Wahk5ctWcR6d0W5BX46VCNgSnrVGVMsHlhplYNDlLW3fHe5rcAJmvzKQjuCzYw6DFg9iPvCn3OVyZYdCtNhygKqitXB2gXWjNFGQK6J1Ur4N6B2paqfFl6qhr2kmPEnH3CZ4WKgn4GoLHY7hOnyMACgWCNwkyje/5Y5xtZYJ9FmaQnfifaYCnXRpCTdMQ2oE0RHZ/nMb7q1rKoDF6SX+W8qXn9i88OpuM3zz8hOK5sQwfIDqgn3C9YD2Ef0DrgrWM75FYBLvPY0APUBnQMpsB2ic0gHucBuwDWguvZWaLqMrkFlft8VtcVaS4Paq8AQ==&a=TZLRrUMhDEN36TcfxEAvzFJ1/zVqE8N70pV8ZMUOqfr5fIu+V7yjxNNKvAoZ5G5e5JosfTi3WfOc26x5Z6VzmNkx38mT89Pz0ul56fQu6clKb5a8HjO9NZPpofJ9m+mtP0b4zfRQ/3Hk++WhHh7k3CVFzV1S1Ny1ObJf3tkrBdzDnUDeqD1A3ohQ1j3U20NFc5YdNytuztK7PVS0/H0AZfMu6e2horlH3J2ldzup6O5hH5pvF3ffTg/NzA4MzzOHcXzeNXRL/on0fX8=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

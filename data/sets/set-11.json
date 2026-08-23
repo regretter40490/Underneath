@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/icy_bypass-01.png",
   "descriptionShort": "",
   "descriptionFull": "縦横にマスの中央を通る線を引く。",
+  "descriptionFullCleared": "縦横にマスの中央を通る線を引く。\n線は自己交差のない単一のループをなす。\n線は×を通らない。\nそれぞれの色について、ループの内側と外側の面積は等しい。",
   "pdfUrl": "data/assets/pdf/11_氷の迂回路.pdf",
   "puzzles": [
     {
@@ -69,12 +70,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVXfb8JGDH7nr5jutSctuYQDIu0BKGXtKKUtiEGEUIAAaROuCwllQe3fXp8TID9oNU2bovjsz47tO+4z279Cy7cph0erUoWq8DDO8VV1HV8lefpO4NrGL7QeBmvhg0LpQ5cuLXdr07vRutMU9ffr+p+7ajAeq20lvFWGLzcvV0/eH7eO5qs33WrvvnfvsFX992bjkbeueC/cDgJ79+ipjZfBuL/sDVc19nerO9aj8YNSvhsvf93VB7+VzKSFSckkKqGEwauSyWfU+URAm5QO0ZNxiKaGOfmg0eCsVs/qs3EgTCcGp0TTiFGBBawaLGViaLBwBHXwlWEBS1UpKYPJYJGmXCtockAhD4cEqgIrZIBvuAwCsyJNqNg1DiBVqKvXwGWSJ0LViczJpDU6Wujr3Samrkiz3TmaUOMcW8EvG0dnFZ29QWxyFb3tpAyXu4Xgk1nNeMsYfLKwiYfE4tjDsQyX+zw5K0rKCfsbyXNlMplOidhPG3EYY3BUOYgXo3ghSivm0pjsLgvhSeSgXBQ0d4M/AUPZh3tAIw3lNUoFZRllB2NaKIcomyh1lBxjKvImlUomY8iU+Cn/ex0uNFxdshXudBv6S2tuT+29NQ+IEdMq7clgm9Cb2X4GcoV4c53NpQxHFzECP0wwZ7URvn325MLtxeq7TNKVAeNUM+Evci29W66b3QqOmww0d/y5m4UC38nYlu+L9wziWcE6A8ysAIbTdu28ZTPZm9xZBla2RevVylXzzsfxUSJ7gq+pUfjJ5ZipGVGdRm0gQGoS0egR5sy9EXXlmDEJXD4FLqQXuoEzF66AmgjiNcMvGaitszpEv9SaMSi/h/lhEi3+bATq6aZHPcOM+pTIwg38UqrEEzvoPG5M2nPhzWBvJkmdDsxK2Ga4EK9hEoo0qcftd07t/9w9JDl2L9W4e6nlu0+2J7tfOJYnNovp83+/hdrkI/6plH/4P5CezfEE+59GxT5ht/B/IPjZmYcv0BzQH5ie8l7Cv2F1ypvHCxSWzRZZDOgFIgOa5zJARToDWGA0YN+QWmbN81p2lae2LFVgtyyVJrg5KX0B&a=RZDLCcQwFAN7yVmXfT8XY9J/G9HuOCwYMkijd8jet/YVqSh9Ln0pEyrlyVoxL2VDoySzXiysFwtLhWep8Cpez9QBeYFnqfFcDW2XmtY0XHYwJxsNC+vDZX/WodJiYX2xsL5YWDqtq1/mv/B/9wM=",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tVTvb6JMEP7uX3HZr93kZQFXJbkP2F9ve9baVuMpMQYVlRbcvgjWw7R/e2cHqIC2eXO5C2GYeWZ2ZnaZZ9f/RXbgUA6PVqcKZfConOPLdB1fJX26bug5xjdqRuFSBKBQetumc9tbO/R6sGydCvPlzPy5qYfDIbtUoiul/3jxeHLv/7hytYBdtOudm86Nqy7Mf0+bd/z8hHeidS90Nnc+az72ht15p79oqL/O20M9Ht4q1evh/J+N2ftesdIWRhWLMEKJCi8jo7e49YaANqrs4ntjF48Na/RK495ere/VB2NHVI0YNUhQIwZTKNHA5PDRiVGFTzX58MSpg1OFD5gQU4UY+ZFORglXkyAOMCTksBRhmZhBsbaxA8mgpN6AUIsMCGUjWK/UpXWbWhr67jMLklukmVq6UrCg0H5dDdddplYdfWkWzjBLZqno66SWnq/O5WY+OuMc62WRHCPRgo0M5NnpsqhOidiO065UHfZdguSJFCGtVoqChBd4PirKLvwfGmsoz1AqKKsoWxhzjrKP8hSljpJjTE3+4UrFUlWc4OSp/r4OgwYjRdbCG6+jYG5PnbGztachMZJxz3sK2CryJ05QgDwhnj13dSxD5iJGGEQp5i5WInD2nlK4M1t8lkm6CmCSaiKCWamlF9vzilvBa6AATd1g6hWhMHALth0E4qWA+Ha4LAATO4RLY710n4uZnFXpLEO72KL9ZJeq+fvjeK2QLcHX0ij8ckn/hhGbNL6Emc3dEDS+A/7fGHFb0t8ihKowj37khe5UeAJKSgxmFKYMF4IbRu1D7WdrYOYQZArobdC1ZNkA1I9BjzuGFXcpkXWbuFKqxBcbaDzpS9pT4U9gaxbJHQ5cYbDLaCaeojQUWWIm3bey7mtfdw9Jsu6lmnQvtXL36fZk9zPX9sVqNn7481tojF6TP6X8z+s5f28ml85fuim2KblF8AW/984yfITlgH5B9Jz3GP4JqXPeMn7AYNnsIYkBPcJjQMtUBuiQzQAeEBqwTzgts5ZpLbsqM1uWOiC3LJXntzWqvAM=&a=RZDbCcNAEMR68ff85PZVzOH+2/AkOhMwjFikxHjvW/tarTX6XPpSNDQKbhGKfCkDSkVB9RbWk8JS4WUq8UzFr/iQFJ5T1HoLUy/IBa2nKDx1ilFD1oeiS41nGlofjmdp+A/P8C6en+ev8H/uBw==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }

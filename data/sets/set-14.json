@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/sew_the_stars-01.png",
   "descriptionShort": "",
   "descriptionFull": "点と点を繋ぐ線を引く。",
+  "descriptionFullCleared": "点と点を繋ぐ線を引く。\n線は自己交差のない単一のループをなす。\n線に沿ってループを辿るとき、1から初めて数字NをN番目に通ることができる。\nすべての黒い点を通る。(白い点はどちらでもよい)",
   "pdfUrl": "data/assets/pdf/14_星縫い.pdf",
   "puzzles": [
     {

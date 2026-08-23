@@ -4,6 +4,7 @@
   "icon": "data/assets/icons/metasnake-01.png",
   "descriptionShort": "",
   "descriptionFull": "縦横にマスの中央を通る線を引く。",
+  "descriptionFullCleared": "縦横にマスの中央を通る線を引く。\n二重丸は線の始点と終点になる。\n線が通る丸の中の数字は1ずつ増加する。数字がない丸にも該当する数字が入る。\n上の条件を満たす線の引き方が1通りしかないように、それぞれの丸に数字を入れることができる。",
   "pdfUrl": "data/assets/pdf/08_メタスネーク.pdf",
   "puzzles": [
     {
@@ -69,12 +70,14 @@
     {
       "id": "Ex1",
       "penpaUrl": "./penpa-edit/?m=solve&p=tZTvT+JMEMff96+47Fs3efoDKja5FxXF01NED8JBQ0jBAtWW9bYtekv0b3d2Wo7+0tw9iWl2Mv3OdnZmdz+NfiUu96gJj9GiKtXg0U0Th9Zo4FCzp+/HgWd9oXYSrxgHh9LrTocu3CDy6MVoddlm9tOJ/XPTisdj7UxNztXhfef+4Db8fu4bXOt0W72r3pWvL+1v7eMb8/TA7CXRIPY2N6F2fD8Y9xe94fJI/33aHTfE+FptXowX/23swVfFyWqYKA7RCCU6DI1MXkX3FQV9omzFrbUVU8uZvFAx2LutvfvD2oLtWlvSaBALP9QwDyXNphTMnQDTNJw8gsmGCTHQ5z6fB970EibBF8ZhnYqJ1bKK2SuqWZv30KiqUEgHy9HR9qEdKgy0J2hVtE20lzjnFO0QbRttA62Jcw7lhiiKo+t44unT/P8+nAucAIlYMI0SvnDn3tR7ducxsdLbkY8UtHUSzjxekALGHgN/XZdhFyJWzJNM85drxr19pDTdu1u+l0mGCmKaasb4XamkJzcIiq0gNgUpPa+CFHO/8O5yzp4KSujGq4Iwc2OALFr5j8VM3rq0l7FbLNF9cEurhfvteFHIM8HhGBSOXNJyZAmbirMUgx1QVNwALleWGElaHJJeyTAJYn/OAgZLZhrcsgw8edX+uEOMS6+d8aWC3818cEfgFu676FmO6FMi1z7Gr6VLQraB4tPa5PuchTNozyG5DaIGBKLkjj0kO5olKXbaQfcvO4Akuw6km3YgvZoOZGOf28HR5CU9LPWffmj5/9Un/SyeM74Z/wDxfbAs14AO6ges56J1+jtc56JlvQKxLLbKMag1KINaphmkKtAgVpgG7R2sZdYy2bKqMtxyqQrfcqk84s5EeQM=&a=RdDdCYNgFIPhXbzOTc/vMOL+a5j2/aAgnCB5Injfj+4rQpH6XPqmDFIqilSKJrViSKNY0ipJhoXNVGKdimW/SFZ8khWfOmlVrHiiWTFsbJWaPdcb4XojXB+E64NwfRDdGr5rOFjDwRou1nCxhos1PML1Rbh+ei4tyz5Lz+fX81/9P88L",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     },
     {
       "id": "Ex2",
       "penpaUrl": "./penpa-edit/?m=solve&p=tZRRc6IwEMff+RQ3eW1mjoB6wsw9UKu99qy1PR1PGcdBi0oLphfA9uK0n72bgINB2rl76CDr8ttks0vyJ/6TeszHNbjMJtYxEZcF/3BbRPz0/BoESejbX7CTJmvKwMH4utPBSy+MfXw5Xndb1Hk6c35vm8lkQs719EIf3XfuT26jnxeByUin1+xf9a8CY+X8aJ3eNNonjX4aDxN/exOR0/vhZLDsj1aW8bfdm9T45FqvX06WX7fO8Lvm5jVMNRcRhJEBN0HTV959lcCcajt+a+/4zHanL5gPC7dZuL/sHdievUOkiWw5kcg8kFACswC1ugCNPYB5RM4e72frGC0Ctgj9WRcGwQxiAYXRKpWJj6jZqKI1o5LWKqmor1QDlNeRRRrSDqBrzE1pz6TVpa1L25Vj2tKOpG1JW5O2Icd8E+9N01zSzI4Frlf/w7bABqCYhrM4ZUtv4c/8Z2+RIDs7HIcRhW3SaO4zBYWUPobBpirDPoTshKU5C1YbyvwiUhru363eyyRCCsxSzSm7K5X05IWh2orUjIKyfVBQwgLl2WOMPikk8pK1AuZeAhqL18GjmsnflN5l4qkleg9eabWoeB0vGnpG8nZNbIjt2nHL5g7m55kK9nrC/AbUcmXzsRCLi7KjFqVhEixoSGHJnMHpkRMNcNuFO5Jx4bVyeeng93If3DG4yjnmfdvlA4zE2qdytnBRRLdQfFabeF7QaA7tuejgBYHoodP0jj6kezELBThZB91/7ACS7DsQbtaB8Co6EI19bgfW9CXbLP2/vmeHX6dP+gg85/qm7AOJF8EyrhA60A+0fhCt4u/o+iBa5kciFsUe6xhohZSBltUM6FjQAI80DewdWYusZWWLqsriFksd6VssdShxd6q9AQ==&a=Rc5RCgQhDAPQu/idj2lTdTyLeP9rGCawCwUfphH3PtgtXuRANLRYyOen+UkXGVYglzXAsibYrQW6oajS6qBf1lFuaKnc0FLRolP95j/nAg==",
-      "prereqs": []
+      "prereqs": [],
+      "idcolor": "#FF00FF"
     }
   ]
 }
