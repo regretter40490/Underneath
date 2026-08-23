@@ -23,15 +23,19 @@
     </div>
 </section>
 
-    <!-- 2. セットホーム画面 -->
+<!-- 2. セットホーム画面 -->
     <section id="view-set" class="view hidden">
-	<button onclick="backToHomeView()">← 全体ホームに戻る</button>
-        <div id="set-header">
-            <img id="set-icon" src="" alt="icon">
-            <h2 id="set-title"></h2>
-            <p id="set-description"></p>
-            <div class="set-actions">
-                <a id="link-pdf-download" href="#" download class="button">PDFをダウンロード</a>
+        <div class="set-header-container">
+            <button onclick="backToHomeView()" class="btn-back-home" aria-label="全体ホームに戻る">←</button>
+            <div id="set-header">
+                <div class="set-info">
+                    <h2 id="set-title"></h2>
+                    <p id="set-description"></p>
+                    <div class="set-actions">
+                        <a id="link-pdf-download" href="#" download class="button">PDFをダウンロード</a>
+                    </div>
+                </div>
+                <img id="set-icon" src="" alt="icon">
             </div>
         </div>
         <hr>
@@ -39,23 +43,22 @@
         <div id="puzzle-list" class="button-grid"></div>
     </section>
 
-    <!-- 3. 問題プレイ画面 -->
-<section id="view-puzzle" class="view hidden">
-    <div class="puzzle-nav">
-        <button onclick="backToSetView()">← セット画面に戻る</button>
-        <span id="puzzle-title"></span>
-        <div class="puzzle-nav-controls">
-            <!-- 追加: 外部のPenpa-editorで開くボタン -->
+<!-- 3. 問題プレイ画面 -->
+    <section id="view-puzzle" class="view hidden">
+        <div class="puzzle-nav">
+            <button onclick="backToSetView()">← セット画面に戻る</button>
+            <span id="puzzle-title"></span>
             <a id="btn-external-penpa" href="#" target="_blank" rel="noopener noreferrer" class="button button-external">Penpa-editorで解く ↗</a>
-            <button id="btn-prev-puzzle" onclick="navigatePuzzle(-1)">前の問題</button>
-            <button id="btn-next-puzzle" onclick="navigatePuzzle(1)">次の問題</button>
         </div>
-    </div>
-    <!-- Penpa-editor埋め込み用 iframe -->
-    <div class="iframe-container">
-        <iframe id="penpa-frame" src="about:blank"></iframe>
-    </div>
-</section>
+        
+        <div class="puzzle-main-container">
+            <button id="btn-prev-puzzle" onclick="navigatePuzzle(-1)" class="puzzle-side-btn">＜</button>
+            <div class="iframe-container">
+                <iframe id="penpa-frame" src="about:blank"></iframe>
+            </div>
+            <button id="btn-next-puzzle" onclick="navigatePuzzle(1)" class="puzzle-side-btn">＞</button>
+        </div>
+    </section>
 
     <script src="app.js"></script>
 </body>

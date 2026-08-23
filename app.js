@@ -142,8 +142,20 @@ function renderSetView(setId) {
     const set = puzzleSets.find(s => s.setId === setId);
     if (!set) return;
 
+    const isCleared = isSetCleared(set);
+    const descElement = document.getElementById('set-description');
+
     document.getElementById('set-title').innerText = set.setTitle;
-    document.getElementById('set-description').innerText = set.descriptionFull;
+    
+    // クリア状況に応じて表示テキストとクラスを更新
+    if (isCleared) {
+        descElement.textContent = set.descriptionFullCleared || set.descriptionFull;
+        descElement.classList.add('cleared');
+    } else {
+        descElement.textContent = set.descriptionFull;
+        descElement.classList.remove('cleared');
+    }
+
     document.getElementById('set-icon').src = set.icon;
     document.getElementById('link-pdf-download').href = set.pdfUrl;
 
@@ -152,13 +164,18 @@ function renderSetView(setId) {
 
     set.puzzles.forEach((puzzle, index) => {
         const cleared = getClearedPuzzles();
-        const isCleared = cleared.has(`${setId}_${puzzle.id}`);
+        const isClearedPuzzle = cleared.has(`${setId}_${puzzle.id}`);
         const isUnlocked = isPuzzleUnlocked(setId, puzzle);
 
         const btn = document.createElement('button');
-        btn.innerText = `${puzzle.id} ${isCleared ? '✓' : ''}`;
-        btn.className = `puzzle-btn ${isCleared ? 'cleared' : ''}`;
+        btn.innerText = `${puzzle.id} ${isClearedPuzzle ? '✓' : ''}`;
+        btn.className = `puzzle-btn ${isClearedPuzzle ? 'cleared' : ''}`;
         btn.disabled = !isUnlocked;
+
+        // idcolorの指定がある場合に文字色を反映
+        if (puzzle.idcolor) {
+            btn.style.color = puzzle.idcolor;
+        }
 
         btn.onclick = () => loadPuzzle(setId, index);
         listContainer.appendChild(btn);
