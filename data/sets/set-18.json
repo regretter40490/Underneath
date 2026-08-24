@@ -4,7 +4,7 @@
   "icon": "data/assets/icons/Galvany-01.png",
   "descriptionShort": "",
   "descriptionFull": "いくつかのマスを黒く塗る。",
-  "descriptionFull": "いくつかのマスを黒く塗る。\n◯のマスはすべて塗り、×のマスはすべて塗られない。\n黒マスの塊はすべて正方形になる。\n数字は、それを含む白マスの塊に斜めに隣接している他の白マスの塊の個数を表す。",
+  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n◯のマスはすべて塗り、×のマスはすべて塗られない。\n黒マスの塊はすべて正方形になる。\n数字は、それを含む白マスの塊に斜めに隣接している他の白マスの塊の個数を表す。",
   "pdfUrl": "data/assets/pdf/18_通電.pdf",
   "puzzles": [
     {
