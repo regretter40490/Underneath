@@ -4,7 +4,7 @@
   "icon": "data/assets/icons/TinkerCell-01.png",
   "descriptionShort": "",
   "descriptionFull": "マスに数字を入れる。",
-  "descriptionFull": "マスに数字を入れる。\nすべてのマスに数字が入る。\n丸数字Nは、N+1とN-1の少なくとも一方に、境界線を跨がず縦横に隣接する。\n丸でない数字Nは、N+1とN-1の両方に、境界線を跨がず縦横に隣接する。",
+  "descriptionFullCleared": "マスに数字を入れる。\nすべてのマスに数字が入る。\n丸数字Nは、N+1とN-1の少なくとも一方に、境界線を跨がず縦横に隣接する。\n丸でない数字Nは、N+1とN-1の両方に、境界線を跨がず縦横に隣接する。",
   "pdfUrl": "data/assets/pdf/16_ティンカーセル.pdf",
   "puzzles": [
     {
