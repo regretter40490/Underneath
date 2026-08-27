@@ -7,6 +7,9 @@
 </head>
 <body>
 
+    <!-- 実績獲得通知バナー表示エリア（画面右上） -->
+    <div id="achievement-toast-container"></div>
+
     <!-- ヘッダー / デバッグ領域 -->
     <header>
         <h1>Underneath</h1>
@@ -17,8 +20,9 @@
     <h2>パズルセット一覧</h2>
     <div id="set-list" class="set-grid"></div>
 
-    <!-- ホーム画面下部に配置（警戒色ボタン） -->
-    <div class="home-footer" style="margin-top: 40px; text-align: center;">
+    <!-- ホーム画面下部ボタンエリア -->
+    <div class="home-footer">
+        <button onclick="openAchievementsModal()" class="button">実績</button>
         <button onclick="resetProgress()" class="button-danger">全進捗をリセット</button>
     </div>
 </section>
@@ -59,6 +63,17 @@
             <button id="btn-next-puzzle" onclick="navigatePuzzle(1)" class="puzzle-side-btn">＞</button>
         </div>
     </section>
+
+    <!-- 実績確認モーダル -->
+    <div id="modal-achievements" class="modal-overlay hidden" onclick="closeAchievementsModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2>実績一覧</h2>
+                <button onclick="closeAchievementsModal()" class="btn-close">&times;</button>
+            </div>
+            <div id="achievement-list" class="achievement-grid"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

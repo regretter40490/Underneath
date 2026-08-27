@@ -1,9 +1,11 @@
 // --- 状態管理 ---
 let puzzleSets = [];
+let achievements = [];
 let currentSetId = null;
 let currentPuzzleIndex = -1;
 
 const STORAGE_KEY = 'underneath_cleared_puzzles';
+const ACHIEVEMENT_STORAGE_KEY = 'underneath_unlocked_achievements';
 
 async function saveCurrentPenpaProgress() {
     const iframe = document.getElementById('penpa-frame');
@@ -11,15 +13,11 @@ async function saveCurrentPenpaProgress() {
     
     const win = iframe.contentWindow;
 
-    // window.PenpaProgress が存在することを確認
     if (win.PenpaProgress && win.pu) {
         try {
-            // UserSettings が存在する場合は念のためフラグを true に設定
             if (win.UserSettings) {
                 win.UserSettings.save_current_puzzle = true;
             }
-            
-            // 非同期保存の完了をしっかり待機
             await win.PenpaProgress.save();
         } catch (e) {
             console.warn('PenpaProgressの保存中にエラーが発生しました:', e);
@@ -44,6 +42,17 @@ async function loadAllPuzzleSets() {
         );
 
         puzzleSets = await Promise.all(fetchPromises);
+
+        // アチーブメントデータの読み込み
+        try {
+            const achRes = await fetch('data/achievements.json');
+            if (achRes.ok) {
+                achievements = await achRes.json();
+            }
+        } catch (e) {
+            console.warn('achievements.json の読み込みに失敗または存在しません');
+        }
+
         showView('home');
     } catch (error) {
         console.error('データロードエラー:', error);
@@ -54,6 +63,12 @@ async function loadAllPuzzleSets() {
 // クリア状況を取得
 function getClearedPuzzles() {
     const data = localStorage.getItem(STORAGE_KEY);
+    return new Set(data ? JSON.parse(data) : []);
+}
+
+// 獲得済み実績を取得
+function getUnlockedAchievements() {
+    const data = localStorage.getItem(ACHIEVEMENT_STORAGE_KEY);
     return new Set(data ? JSON.parse(data) : []);
 }
 
@@ -68,7 +83,117 @@ function markAsCleared(setId, puzzleId) {
         if (currentSetId === setId) {
             renderSetView(setId);
         }
+
+        // 実績チェックの呼び出し
+        checkAchievements();
     }
+}
+
+// 実績条件チェック＆付与処理
+function checkAchievements() {
+    if (!achievements || achievements.length === 0) return;
+
+    const clearedPuzzles = getClearedPuzzles();
+    const unlocked = getUnlockedAchievements();
+    let newlyUnlocked = [];
+
+    achievements.forEach(ach => {
+        if (unlocked.has(String(ach.id))) return;
+
+        let isAchieved = false;
+
+        if (ach.type === 'total_count') {
+            // 全体での正解数
+            if (clearedPuzzles.size >= ach.count) {
+                isAchieved = true;
+            }
+        } else if (ach.type === 'set_all') {
+            // 特定セットの全クリア
+            const set = puzzleSets.find(s => s.setId === ach.setId);
+            if (set && isSetCleared(set)) {
+                isAchieved = true;
+            }
+        } else if (ach.type === 'set_count') {
+            // 特定セット内の指定正解数
+            const set = puzzleSets.find(s => s.setId === ach.setId);
+            if (set) {
+                const count = set.puzzles.filter(p => clearedPuzzles.has(`${set.setId}_${p.id}`)).length;
+                if (count >= ach.count) {
+                    isAchieved = true;
+                }
+            }
+        } else if (ach.type === 'set_puzzles') {
+            // 特定セット内の指定パズルID群をすべて正解
+            if (ach.setId && Array.isArray(ach.puzzleIds)) {
+                const allCleared = ach.puzzleIds.every(pId => clearedPuzzles.has(`${ach.setId}_${pId}`));
+                if (allCleared) {
+                    isAchieved = true;
+                }
+            }
+        }
+
+        if (isAchieved) {
+            unlocked.add(String(ach.id));
+            newlyUnlocked.push(ach);
+        }
+    });
+
+    if (newlyUnlocked.length > 0) {
+        localStorage.setItem(ACHIEVEMENT_STORAGE_KEY, JSON.stringify(Array.from(unlocked)));
+        newlyUnlocked.forEach(ach => showAchievementToast(ach));
+    }
+}
+
+// 実績獲得通知バナー表示
+function showAchievementToast(ach) {
+    const container = document.getElementById('achievement-toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = 'achievement-toast';
+    toast.innerHTML = `
+        <div class="toast-header">実績を獲得しました！</div>
+        <div class="toast-title">${ach.title}</div>
+    `;
+
+    container.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 5000);
+}
+
+// モーダル表示制御（idの数値順にソートして表示）
+function openAchievementsModal() {
+    const unlocked = getUnlockedAchievements();
+    const listContainer = document.getElementById('achievement-list');
+    listContainer.innerHTML = '';
+
+    // 獲得済み実績のみ抽出し、idの番号順（昇順）にソート
+    const unlockedList = achievements
+        .filter(ach => unlocked.has(String(ach.id)))
+        .sort((a, b) => Number(a.id) - Number(b.id));
+
+    if (unlockedList.length === 0) {
+        listContainer.innerHTML = '<div class="empty-achievements">獲得済みの実績はありません。</div>';
+    } else {
+        unlockedList.forEach(ach => {
+            const card = document.createElement('div');
+            card.className = 'achievement-card';
+            card.innerHTML = `
+                <div class="achievement-card-title">★ ${ach.title}</div>
+                <div class="achievement-card-desc">${ach.description}</div>
+            `;
+            listContainer.appendChild(card);
+        });
+    }
+
+    document.getElementById('modal-achievements').classList.remove('hidden');
+}
+
+function closeAchievementsModal(event) {
+    if (event && event.target !== event.currentTarget) return;
+    document.getElementById('modal-achievements').classList.add('hidden');
 }
 
 // 解放判定ロジック
@@ -95,19 +220,29 @@ function showView(viewName) {
 function renderHomeView() {
     const container = document.getElementById('set-list');
     container.innerHTML = '';
+    const clearedPuzzles = getClearedPuzzles();
 
     puzzleSets.forEach(set => {
         const isCleared = isSetCleared(set);
+        const totalCount = set.puzzles ? set.puzzles.length : 0;
+        const clearedCount = set.puzzles ? set.puzzles.filter(p => clearedPuzzles.has(`${set.setId}_${p.id}`)).length : 0;
+        const percent = totalCount > 0 ? (clearedCount / totalCount) * 100 : 0;
+
         const card = document.createElement('div');
         card.className = `set-card ${isCleared ? 'cleared' : ''}`;
         
-        // 修正箇所: クリア済みならタイトルの前に「★ 」を付与
         const displayTitle = isCleared ? `★ ${set.setTitle}` : set.setTitle;
 
         card.innerHTML = `
             <img src="${set.icon}" alt="">
             <h3>${displayTitle}</h3>
             <p>${set.descriptionShort}</p>
+            <div class="progress-container">
+                <span class="progress-text">${clearedCount}/${totalCount}</span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: ${percent}%;"></div>
+                </div>
+            </div>
         `;
         card.onclick = () => showViewSet(set.setId);
         container.appendChild(card);
@@ -115,20 +250,17 @@ function renderHomeView() {
 }
 
 async function showViewSet(setId) {
-    // 画面切り替え前に現在の問題の解答過程を保存
     await saveCurrentPenpaProgress();
     currentSetId = setId;
     renderSetView(setId);
     showView('set');
 }
 
-// ホームに戻る処理
 async function backToHomeView() {
     await saveCurrentPenpaProgress();
     showView('home');
 }
 
-// セット画面に戻る処理
 async function backToSetView() {
     await saveCurrentPenpaProgress();
     if (currentSetId) {
@@ -147,7 +279,6 @@ function renderSetView(setId) {
 
     document.getElementById('set-title').innerText = set.setTitle;
     
-    // クリア状況に応じて表示テキストとクラスを更新
     if (isCleared) {
         descElement.textContent = set.descriptionFullCleared || set.descriptionFull;
         descElement.classList.add('cleared');
@@ -172,7 +303,6 @@ function renderSetView(setId) {
         btn.className = `puzzle-btn ${isClearedPuzzle ? 'cleared' : ''}`;
         btn.disabled = !isUnlocked;
 
-        // idcolorの指定がある場合に文字色を反映
         if (puzzle.idcolor) {
             btn.style.color = puzzle.idcolor;
         }
@@ -182,9 +312,7 @@ function renderSetView(setId) {
     });
 }
 
-// 問題の読み込み (async化)
 async function loadPuzzle(setId, index) {
-    // 1. 現在開いている問題があれば、まず解答過程を待機保存
     await saveCurrentPenpaProgress();
 
     const set = puzzleSets.find(s => s.setId === setId);
@@ -197,14 +325,12 @@ async function loadPuzzle(setId, index) {
 
     document.getElementById('puzzle-title').innerText = `${set.setTitle} - ${puzzle.id}`;
     
-    // 公式Penpa-editorへの外部リンク設定
     const externalBtn = document.getElementById('btn-external-penpa');
     if (externalBtn && puzzle.penpaUrl) {
         const officialUrl = puzzle.penpaUrl.replace(/^\.\/penpa-edit\//, 'https://swaroopg92.github.io/penpa-edit/');
         externalBtn.href = officialUrl;
     }
 
-    // 2. iframeを一旦リセットして新しい問題を読み込む
     const iframe = document.getElementById('penpa-frame');
     iframe.src = 'about:blank';
     setTimeout(() => {
@@ -254,14 +380,20 @@ window.addEventListener('message', (event) => {
     }
 });
 
-// 進捗およびPenpa側の解答途中経過を完全にリセット
+// 進捗およびPenpa側の解答途中経過を完全にリセット（獲得済み実績は保護される）
 async function resetProgress() {
-    if (confirm('クリア進捗および入力中の解答状態をすべて初期化しますか？')) {
-        // 1. localStorage と sessionStorage のクリア
+    if (confirm('クリア進捗および入力中の解答状態をすべて初期化しますか？\n※獲得した実績は削除されません。')) {
+        // 実績情報は退避保護
+        const savedAchievements = localStorage.getItem(ACHIEVEMENT_STORAGE_KEY);
+
         localStorage.clear();
         sessionStorage.clear();
         
-        // 2. iframe内の PenpaProgress クリア処理の呼出
+        // 実績情報を再保存
+        if (savedAchievements) {
+            localStorage.setItem(ACHIEVEMENT_STORAGE_KEY, savedAchievements);
+        }
+
         const iframe = document.getElementById('penpa-frame');
         if (iframe && iframe.contentWindow && iframe.contentWindow.PenpaProgress) {
             try {
@@ -271,7 +403,6 @@ async function resetProgress() {
             }
         }
 
-        // 3. IndexedDB データベース (localforage) の消去
         if (window.indexedDB) {
             try {
                 window.indexedDB.deleteDatabase('localforage');
@@ -280,7 +411,6 @@ async function resetProgress() {
             }
         }
 
-        // 4. iframeのリセット
         if (iframe) {
             iframe.src = 'about:blank';
         }
