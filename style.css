@@ -539,7 +539,8 @@ iframe {
 
 .achievement-card {
     background: rgba(0, 255, 170, 0.05);
-    border: 1px solid var(--cleared);
+    /* カスタム変数 --ach-color がある場合はそれを使い、なければデフォルトの var(--cleared) を使用 */
+    border: 1px solid var(--ach-color, var(--cleared));
     border-radius: 8px;
     padding: 16px;
     display: flex;
@@ -550,12 +551,13 @@ iframe {
 .achievement-card-title {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--cleared);
+    /* 星と実績名のテキストカラーを動的に変更 */
+    color: var(--ach-color, var(--cleared));
 }
 
 .achievement-card-desc {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--text-muted); /* 獲得条件テキストはそのまま */
 }
 
 .empty-achievements {

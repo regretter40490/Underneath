@@ -180,6 +180,12 @@ function openAchievementsModal() {
         unlockedList.forEach(ach => {
             const card = document.createElement('div');
             card.className = 'achievement-card';
+            
+            // ach.color が指定されている場合、CSS変数 --ach-color に色をセット
+            if (ach.color) {
+                card.style.setProperty('--ach-color', ach.color);
+            }
+
             card.innerHTML = `
                 <div class="achievement-card-title">★ ${ach.title}</div>
                 <div class="achievement-card-desc">${ach.description}</div>
