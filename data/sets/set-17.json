@@ -4,7 +4,7 @@
   "icon": "data/assets/icons/sugar_coatinghold-01.png",
   "descriptionShort": "",
   "descriptionFull": "いくつかのマスを黒く塗る。",
-  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n塗られずに残ったすべての白マスの塊は、上に提示されている図形を(回転反転を許さずに)含む。\n数字は、その塊に含まれる区切り線の長さの総和を表す。",
+  "descriptionFullCleared": "いくつかのマスを黒く塗る。\n塗られずに残ったすべての白マスの塊は、上に提示されている図形を(回転を許し反転を許さずに)含む。\n数字は、その塊に含まれる区切り線の長さの総和を表す。",
   "pdfUrl": "data/assets/pdf/17_糖衣城.pdf",
   "puzzles": [
     {

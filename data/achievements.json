@@ -25,14 +25,16 @@
     "title": "仮説から確信へ",
     "description": "パズルを100問正解",
     "type": "total_count",
-    "count": 100
+    "count": 100,
+    "color": "#FFFF00"
   },
   {
     "id": "5",
     "title": "確定",
     "description": "パズルを300問正解",
     "type": "total_count",
-    "count": 300
+    "count": 300,
+    "color": "#FF8C00"
   },
   {
     "id": "101",
@@ -63,7 +65,8 @@
     "title": "ずっと一緒だよ",
     "description": "[仲良し団地]をコンプリート",
     "type": "set_all",
-    "setId": "set-01"
+    "setId": "set-01",
+    "color": "#FFFF00"
   },
   {
     "id": "201",
@@ -102,7 +105,8 @@
     "title": "このマスを貴方だけに贈りマス",
     "description": "[仮想タングラム]をコンプリート",
     "type": "set_all",
-    "setId": "set-03"
+    "setId": "set-03",
+    "color": "#FFFF00"
   },
   {
     "id": "401",
@@ -125,7 +129,8 @@
     "title": "足並み揃えてゴールイン",
     "description": "[成長のらせん]をコンプリート",
     "type": "set_all",
-    "setId": "set-04"
+    "setId": "set-04",
+    "color": "#FFFF00"
   },
   {
     "id": "501",
@@ -148,7 +153,8 @@
     "title": "隅々まで大掃除",
     "description": "[トランプ兵士の城塞]をコンプリート",
     "type": "set_all",
-    "setId": "set-05"
+    "setId": "set-05",
+    "color": "#FFFF00"
   },
   {
     "id": "601",
@@ -171,7 +177,8 @@
     "title": "イルミネーションを観に行こう",
     "description": "[過剰な街灯]をコンプリート",
     "type": "set_all",
-    "setId": "set-06"
+    "setId": "set-06",
+    "color": "#FFFF00"
   },
   {
     "id": "701",
@@ -202,7 +209,8 @@
     "title": "あなたは水中の……",
     "description": "[蓮葉跳び]をコンプリート",
     "type": "set_all",
-    "setId": "set-07"
+    "setId": "set-07",
+    "color": "#FFFF00"
   },
   {
     "id": "801",
@@ -225,7 +233,8 @@
     "title": "手の鳴らない方へ",
     "description": "[メタスネーク]をコンプリート",
     "type": "set_all",
-    "setId": "set-08"
+    "setId": "set-08",
+    "color": "#FFFF00"
   },
   {
     "id": "901",
@@ -248,7 +257,8 @@
     "title": "今日はプラネタリウムを作るよ！",
     "description": "[アウトサイド・インサイト]をコンプリート",
     "type": "set_all",
-    "setId": "set-09"
+    "setId": "set-09",
+    "color": "#FFFF00"
   },
   {
     "id": "1001",
@@ -271,7 +281,8 @@
     "title": "そっちは尻尾だよ",
     "description": "[ラジカセ]をコンプリート",
     "type": "set_all",
-    "setId": "set-10"
+    "setId": "set-10",
+    "color": "#FFFF00"
   },
   {
     "id": "1101",
@@ -294,7 +305,8 @@
     "title": "お前今交差って言ったか？",
     "description": "[氷の迂回路]をコンプリート",
     "type": "set_all",
-    "setId": "set-11"
+    "setId": "set-11",
+    "color": "#FFFF00"
   },
   {
     "id": "1201",
@@ -317,7 +329,8 @@
     "title": "ストレートティーのセットを",
     "description": "[シロップ漬けクッキー缶]をコンプリート",
     "type": "set_all",
-    "setId": "set-12"
+    "setId": "set-12",
+    "color": "#FFFF00"
   },
   {
     "id": "1301",
@@ -396,7 +409,8 @@
     "title": "久遠の旅路",
     "description": "[ティンカーセル]をコンプリート",
     "type": "set_all",
-    "setId": "set-16"
+    "setId": "set-16",
+    "color": "#FFFF00"
   },
   {
     "id": "1701",
@@ -411,7 +425,8 @@
     "title": "重量オーバー",
     "description": "[糖衣城]をコンプリート",
     "type": "set_all",
-    "setId": "set-17"
+    "setId": "set-17",
+    "color": "#FFFF00"
   },
   {
     "id": "1801",
